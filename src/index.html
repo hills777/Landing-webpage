@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        div + div{
+            margin-bottom: 16px !important;
+        }
+        body {
+            max-height: 100vh;
+            line-height: 2.5;
+            font-family: courier, serif;
+        }
+
+        header {
+            min-height: 10vh;
+            background-color: powderblue;
+        }
+
+        main {
+            min-height: 60vh;
+            background-color: white;
+        }
+
+        footer {
+            min-height: 30vh;
+            background-color: darkslategrey;
+            max-width: 100%;
+        }
+        #contact{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        #contact-col1{
+            max-width: 100%;
+            margin-right: 271.07px;
+            margin-left: 271.07px;
+            padding: 2px;
+        }
+        #footer_link_logo{
+            width: 64px;
+            height: 64px;
+            margin: 0 auto;
+            color: rgb(108, 117, 125);
+            text-decoration-line: none;
+        }
+        #footer_link_logo img{
+            width: 64px;
+        }
+        nav a {
+            margin: 100px;
+        }
+
+        nav a:link {
+            color: green;
+        }
+
+        nav a:hover {
+            color: hotpink;
+        }
+
+        nav {
+            max-width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        #home {
+            overflow: hidden;
+            text-align: center;
+        }
+
+        div p {
+            font-size: 1.25rem;
+            font-weight: 300;
+        }
+        div a {
+            color: white;
+            font-size: 1rem;
+            text-decoration: none;
+            border: 1px solid blue;
+            background-color: cornflowerblue;
+            border-radius: 0.25rem;
+            padding-top: 0.375rem;
+            padding-bottom: 0.375rem;
+            padding-left: 0.75rem;
+            padding-right: 0.75rem;
+            display: inline-block;
+            font-weight: 300;
+        }
+        #product {
+            display: flex;
+            width: 800px;
+        }
+        #col-1, #col-2 {
+            text-align: center;
+            overflow: hidden;
+        }
+        p {
+            font-size: 1.25rem;
+            font-weight: 300;
+        }
+        img {
+            width: 296px;
+            border-top-left-radius: 21px;
+            border-top-right-radius: 21px;
+            border-bottom: 0px;
+            border-left: 0px;
+        }
+        form > div{
+            margin-bottom: 16px;
+        }
+        #contact-col2 {
+            max-width: 100%;
+            padding: 0 16px;
+            margin: 0 70.5547px;
+        }
+        h5{
+            font-weight: 500;
+            line-height: 24px;
+            font-size: 20px;
+            margin-top: 0;
+            margin-bottom: 8px;
+            color: rgb(248,249,250);
+        }
+        label{
+            display: block;
+            margin-bottom: 8px;
+            color: rgb(248,249,250);
+        }
+        #email{
+            width: 227.906px;
+            padding: 6px 12px;
+            font-size: 16px;
+            line-height: 24px;
+            color: rgb(33,37,41);
+            border: 1px solid rgb(206,212,218);
+            border-radius: 4px;
+        }
+        button{
+            width: 227.906px;
+            padding: 6px 12px;
+            font-size: 16px;
+            border-radius: 4px;
+            border: 1px solid;
+            text-decoration: none;
+            color: white;
+            background-color: rgb(108,117,125);
+            border-color: rgb(108,117,125);
+        }
+        button:hover {
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <nav>
+        <a href="#home" id="link_logo"><img src="C:\Users\pc\Desktop\HILLS COMP WEB DEV CLASS\FIRSTPROJECT\image\man_praying.jpg" title="logo" alt="logo" width="64" height="64"></a>
+        <a href="#home" id="link_home">Home</a>
+        <a href="#product" id="link_product">Product</a>
+        <a href="#contact" id="link_contact">Contact</a>
+    </nav>
+
+</header>
+
+<main>
+    <div id="home">
+        <div>
+            <h1>First landing</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Integer vel cursus dui, quis malesuada massa. Vestibulum mi elit,
+                sodales eget neque in, fermentum dictum elit. Fusce ut porttitor felis.
+            </p>
+            <a href="#product">Coming soon</a>
+        </div>
+    </div>
+    <!--product is row-->
+    <div id="product">
+        <!--column-->
+        <div id="col-1">
+            <div>
+                <h2>Title</h2>
+                <p>paragraph</p>
+            </div>
+            <img src="C:\Users\pc\Desktop\HILLS COMP WEB DEV CLASS\FIRSTPROJECT\image\camera.jpg" title="product image" alt="product image">
+        </div>
+        <!--column-->
+        <div id="col-2">
+            <div>
+                <h2>Title</h2>
+                <p>paragraph</p>
+            </div>
+            <img src="C:\Users\pc\Desktop\HILLS COMP WEB DEV CLASS\FIRSTPROJECT\image\headphones.jpg" title="product image" alt="product image">
+        </div>
+
+    </div>
+</main>
+
+<footer>
+    <div id="contact">
+        <div id="contact-col1">
+            <a id="footer_link_logo" href="#home"><img src="#logo" alt="logo" width="64px" height="64px" title="Footer Logo"></a>
+            <div>
+                <a id="footer_link_home" href="#home"><img src="C:\Users\pc\Desktop\HILLS COMP WEB DEV CLASS\FIRSTPROJECT\image\man_praying.jpg" title="logo" alt="logo" width="64" height="64">Home</a>
+                <a id="footer_link_product" href="#product">Product</a>
+                <a id="footer_link_contact" href="#contact">Contact</a>
+            </div>
+            <p>2022</p>
+        </div>
+        <div id="contact-col2">
+            <form>
+                <h5>Sign up for our news letter</h5>
+                <div>
+                    <label for="email">Email</label>
+                    <input id="email" type="email" placeholder="me@example.com" name="email" required>
+                </div>
+                <div>
+                    <label for="checkbox"><input id="checkbox" type="checkbox" required>I agree to receive emails</label>
+                </div>
+                <button type="submit">Sign up</button>
+            </form>
+
+        </div>
+
+    </div>
+</footer>
+
+</body>
+</html>
